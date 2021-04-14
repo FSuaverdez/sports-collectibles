@@ -36,7 +36,7 @@ module.exports.getData = async (req, res) => {
 
   let finalObj = { term, items: {} }
   data.items.forEach((item) => {
-    const date = item.end.split('T')[0]
+    const date = item.end.slice(0, 10)
     if (finalObj[date]) {
       finalObj.items[date].push(item)
     } else {
