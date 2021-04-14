@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Glowing Search Bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"
+    integrity="sha512-RGbSeD/jDcZBWNsI1VCvdjcDULuSfWTtIva2ek5FtteXeSjLfXac4kqkDRHVGf1TwsXCAqPTF7/EYITD0/CTqw=="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <form role="search" method="get" class="search-form form" action="">
+        <label>
+          <span class="screen-reader-text">Search for...</span>
+          <input type="search" class="search-field" placeholder="Type something..." value="" name="term" title="" />
+        </label>
+        <input type="submit" class="search-submit button" value="&#xf002" />
+      </form>
+      <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    </div>
+  </div>
+
+
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
