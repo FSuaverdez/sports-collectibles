@@ -6,7 +6,6 @@ const sorts = {
 }
 
 module.exports.getData = async (req, res) => {
-  console.log()
   const query = req.body.queryTerm
   const term = req.body.term
   const response = await fetch(
@@ -36,7 +35,7 @@ module.exports.getData = async (req, res) => {
 
   let finalObj = { term, items: {} }
   data.items.forEach((item) => {
-    const date = item.end.slice(0, 10)
+    const date = item.end
     if (finalObj[date]) {
       finalObj.items[date].push(item)
     } else {

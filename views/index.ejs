@@ -20,16 +20,29 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <form role="search" method="get" class="search-form form" action="">
-        <label>
-          <span class="screen-reader-text">Search for...</span>
-          <input type="search" class="search-field" placeholder="Type something..." value="" name="term" title="" />
-        </label>
-        <input type="submit" class="search-submit button" value="&#xf002" />
+      <form role="search" method="get" class="form" action="">
+        <div class="search-form">
+          <label>
+            <span class="screen-reader-text">Search for...</span>
+            <input type="search" class="search-field" placeholder="Type something..." value="" name="term" title="" />
+          </label>
+          <input type="submit" class="search-submit button" value="&#xf002" />
+        </div>
+        <select name="time" id="time">
+          <option value="lastWeek">Last Week</option>
+          <option value="lastMonth">Last Month</option>
+          <option value="last3Months">Last 3 Months</option>
+        </select>
       </form>
-      <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+      <div>
+        <div id="chartContainer" style="height: 450px; width: 100%;"></div>
+      </div>
+      <div> <img src="" alt=""></div>
     </div>
+
   </div>
+
 
 
 

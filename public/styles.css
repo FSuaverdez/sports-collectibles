@@ -18,6 +18,11 @@ canvas {
   margin-top: 100px;
 }
 
+select {
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
 input[type='search'] {
   -webkit-appearance: none !important;
   background-clip: padding-box;
@@ -41,7 +46,7 @@ input[type='search']:focus {
   outline: none;
 }
 
-form.search-form {
+.search-form {
   display: flex;
   justify-content: center;
 }
@@ -109,4 +114,16 @@ input.search-submit {
   background: #d4b743;
   color: #292826;
   outline: 0;
+}
+
+canvas {
+  margin-top: 2rem;
+  margin-bottom: 100rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 350px;
 }
