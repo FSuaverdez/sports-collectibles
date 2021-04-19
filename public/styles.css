@@ -123,7 +123,7 @@ canvas {
 
 img {
   display: block;
-  margin: auto;
+  margin: 20px auto;
   height: auto;
-  width: 350px;
+  width: auto;
 }
