@@ -32,16 +32,21 @@ module.exports.getData = async (req, res) => {
     }
   )
   const data = await response.json()
-
+  let itemLinks = []
   let finalObj = { term, items: {} }
   data.items.forEach((item) => {
     const date = item.end
+    if (itemLinks.includes(item.link)) {
+      return
+    }
     if (finalObj[date]) {
       finalObj.items[date].push(item)
     } else {
       finalObj.items[date] = [item]
     }
+    itemLinks.push(item.link)
   })
-
+  console.log(Object.keys(finalObj.items).length)
+  console.log(itemLinks.length)
   res.send(finalObj)
 }

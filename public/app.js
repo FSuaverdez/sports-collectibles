@@ -8,7 +8,11 @@ let searchTerm = null
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   const term = form.term.value
-
+  searchItems = {
+    lastWeek: [],
+    lastMonth: [],
+    last3Months: [],
+  }
   const queryTerm = term.replaceAll(' ', '+').split()
   fetch('/', {
     method: 'POST',
