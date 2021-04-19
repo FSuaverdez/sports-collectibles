@@ -46,7 +46,6 @@ module.exports.getData = async (req, res) => {
     }
     itemLinks.push(item.link)
   })
-  console.log(Object.keys(finalObj.items).length)
-  console.log(itemLinks.length)
+
   res.send(finalObj)
 }
